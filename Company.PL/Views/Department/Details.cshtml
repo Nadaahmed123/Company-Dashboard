@@ -1,0 +1,24 @@
+@model Department
+
+<div class="row">
+    <div class="col-6">
+        <h2>Details</h2>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-3">ID</dt>
+            <dd class="col-sm-9">@Model.Id</dd>
+
+            <dt class="col-sm-3">Code</dt>
+            <dd class="col-sm-9">@Model.Code</dd>
+
+            <dt class="col-sm-3">Name</dt>
+            <dd class="col-sm-9">@Model.Name</dd>
+            <dt class="col-sm-3">Create At</dt>
+            <dd class="col-sm-9">@Model.CreateAt</dd>
+            </dl>
+        <div class="form-group">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+            <a asp-action="Index" class="btn btn-light">Back to list</a>
+        </div>
+    </div>
+</div>
