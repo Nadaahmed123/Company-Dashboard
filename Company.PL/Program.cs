@@ -2,7 +2,7 @@ using Company.BLL.Interfaces;
 using Company.BLL.Repositories;
 using Company.DAL.Context;
 using Microsoft.EntityFrameworkCore;
-
+using Company.PL.Mapper;
 namespace Company.PL
 {
     public class Program
@@ -18,6 +18,10 @@ namespace Company.PL
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
             builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddAutoMapper(Map => Map.AddProfile(new EmployeeProfile()));
+            builder.Services.AddAutoMapper(Map => Map.AddProfile(new DepartmentProfile()));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

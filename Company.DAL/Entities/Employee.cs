@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Company.DAL.Entities
 {
-    public class Employee
+    public class Employee :BaseEntity
     {
         public int Id { set; get; }
         [Required]

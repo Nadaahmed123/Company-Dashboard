@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 using Company.DAL.Entities;
 namespace Company.BLL.Interfaces
 {
-    public interface IEmployeeRepository
+    public interface IEmployeeRepository : IGenericRepository<Employee>
     {
-        Employee GetById(int id);
-        IEnumerable<Employee> GetAll();
-        int Add(Employee employee);
-        int Update(Employee employee);
-        int Delete(Employee employee);
+        IEnumerable<Employee> GetEmployeeByDepartmentName(String departmentName);
+        IEnumerable<Employee> Search(string name);
+
+         Employee GetById(int id);
+        // IEnumerable<Employee> GetAll();
+        // int Add(Employee employee);
+        // int Update(Employee employee);
+        // int Delete(Employee employee);
     }
 }

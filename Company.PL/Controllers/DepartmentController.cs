@@ -8,19 +8,19 @@ namespace Company.PL.Controllers
 {
     public class DepartmentController : Controller
     {
-        private readonly IDepartmentRepository _departmentRepository;
+         private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger<DepartmentController> _logger;
 
-        public DepartmentController(IDepartmentRepository departmentRepository, ILogger<DepartmentController> logger)
+        public DepartmentController(IUnitOfWork unitOfWork, ILogger<DepartmentController> logger)
         {
-            _departmentRepository = departmentRepository;
+            _unitOfWork = unitOfWork;
             _logger = logger;
         }
 
         [HttpGet]
         public IActionResult Index()
         {
-            var departments = _departmentRepository.GetAll();
+            var departments =_unitOfWork .DepartmentRepository.GetAll();
             return View(departments);
         }
 
@@ -35,7 +35,8 @@ namespace Company.PL.Controllers
         {
             if (ModelState.IsValid)
             {
-                _departmentRepository.Add(department);
+                _unitOfWork.DepartmentRepository.Add(department);
+                _unitOfWork.Complete();
                 return RedirectToAction(nameof(Index));
             }
             else
@@ -52,7 +53,7 @@ namespace Company.PL.Controllers
                 if (id is null)
                     return BadRequest();
 
-                var department = _departmentRepository.GetById(id);
+                var department =_unitOfWork .DepartmentRepository.GetById(id);
 
                 if (department is null)
                     return NotFound();
@@ -74,7 +75,7 @@ namespace Company.PL.Controllers
                 if (id is null)
                     return BadRequest();
 
-                var department = _departmentRepository.GetById(id);
+                var department =_unitOfWork .DepartmentRepository.GetById(id);
 
                 if (department is null)
                     return NotFound();
@@ -95,7 +96,8 @@ namespace Company.PL.Controllers
            {
                if (ModelState.IsValid)
                {
-                   _departmentRepository.Update(department);
+                   _unitOfWork .DepartmentRepository.Update(department);
+                   _unitOfWork.Complete();
                    return RedirectToAction(nameof(Index));
                }
                else
@@ -116,15 +118,15 @@ public IActionResult Delete(int? id)
    try
    {
        if (id == null)
-           return BadRequest();
+           return BadRequest(); 
 
-       var department = _departmentRepository.GetById(id);
+       var department =_unitOfWork .DepartmentRepository.GetById(id);
 
        if (department == null)
            return NotFound();
 
-       _departmentRepository.Delete(department);
-
+       _unitOfWork .DepartmentRepository.Delete(department);
+       _unitOfWork.Complete();
        return RedirectToAction(nameof(Index));
    }
    catch (Exception ex)

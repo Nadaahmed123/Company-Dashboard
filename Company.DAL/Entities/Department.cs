@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Company.DAL.Entities
 {
-    public class Department
+    public class Department :BaseEntity
     {
         public int Id { get; set; }
         [Required(ErrorMessage = "Department name is Required ")]

@@ -12,3 +12,18 @@ D:\DotNetMeterial\Company.DAL\obj\Debug\net6.0\refint\Company.DAL.dll
 D:\DotNetMeterial\Company.DAL\obj\Debug\net6.0\Company.DAL.pdb
 D:\DotNetMeterial\Company.DAL\obj\Debug\net6.0\Company.DAL.genruntimeconfig.cache
 D:\DotNetMeterial\Company.DAL\obj\Debug\net6.0\ref\Company.DAL.dll
+D:\DotNetMeterial\Company Dashboard\Company.DAL\bin\Debug\net6.0\Company.DAL.deps.json
+D:\DotNetMeterial\Company Dashboard\Company.DAL\bin\Debug\net6.0\Company.DAL.runtimeconfig.json
+D:\DotNetMeterial\Company Dashboard\Company.DAL\bin\Debug\net6.0\Company.DAL.dll
+D:\DotNetMeterial\Company Dashboard\Company.DAL\bin\Debug\net6.0\Company.DAL.pdb
+D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\Company.DAL.csproj.AssemblyReference.cache
+D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\Company.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\Company.DAL.AssemblyInfoInputs.cache
+D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\Company.DAL.AssemblyInfo.cs
+D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\Company.DAL.csproj.CoreCompileInputs.cache
+D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\Company.DAL.sourcelink.json
+D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\Company.DAL.dll
+D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\refint\Company.DAL.dll
+D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\Company.DAL.pdb
+D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\Company.DAL.genruntimeconfig.cache
+D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\ref\Company.DAL.dll
