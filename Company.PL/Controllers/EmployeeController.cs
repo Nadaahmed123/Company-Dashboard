@@ -1,117 +1,231 @@
-using AutoMapper;
 using Company.BLL.Interfaces;
 using Company.DAL.Entities;
 using Company.PL.Helper;
 using Company.PL.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Linq;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Company.PL.Controllers
 {
     public class EmployeeController : Controller
     {
-        private readonly IUnitOfWork _unitofwork;
-        private readonly IMapper mapper;
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly ILogger<EmployeeController> _logger;
 
-        public EmployeeController(IUnitOfWork unitOfWork,IMapper mapper)
+        public EmployeeController(IUnitOfWork unitOfWork, ILogger<EmployeeController> logger)
         {
-            _unitofwork = unitOfWork;
-            this.mapper = mapper;
+            _unitOfWork = unitOfWork;
+            _logger = logger;
         }
-        public IActionResult Index(String SearchValue = "")
+
+        [HttpGet]
+        public IActionResult Index(string searchValue = "")
         {
-            IEnumerable<Employee> employees;
-            IEnumerable<EmployeeViewModel> employeeViewModel;
-            if (string.IsNullOrEmpty(SearchValue)) { 
-            employees = _unitofwork.EmployeeRepository.GetAll();
-            employeeViewModel = mapper.Map<IEnumerable<EmployeeViewModel>>(employees);
+            try
+            {
+                var employees = string.IsNullOrEmpty(searchValue)
+                    ? _unitOfWork.EmployeeRepository.GetAll()
+                    : _unitOfWork.EmployeeRepository.Search(searchValue);
+
+                var employeeViewModels = employees.Select(e => new EmployeeViewModel
+                {
+                    Id = e.Id,
+                    Name = e.Name,
+                    Age = e.Age,
+                    Address = e.Address,
+                    Email = e.Email,
+                    Salary = e.Salary,
+                    isActive = e.isActive,
+                    HireDate = e.HireDate,
+                    ImageUrl = e.ImageUrl,
+                    DepartmentId = e.DepartmentId
+                }).ToList();
+
+                return View(employeeViewModels);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return RedirectToAction("Error", "Home");
+            }
         }
 
-
-
-            else { 
-                employees = _unitofwork.EmployeeRepository.Search(SearchValue);
-            employeeViewModel = mapper.Map<IEnumerable<EmployeeViewModel>>(employees);
-        }
-
-         return View(employeeViewModel);
-           
-        }
-        public IActionResult Create()
-        {
-            ViewBag.Departments = _unitofwork.DepartmentRepository.GetAll();
-            return View(new EmployeeViewModel());
-        }
-
-        
-             
-    [HttpPost]
-public IActionResult Create(EmployeeViewModel employeeViewModel)
+       [HttpGet]
+public IActionResult Create()
 {
     try
     {
-        if (ModelState.IsValid)
-        {
-            // Map the view model to the entity
-            var employee = mapper.Map<Employee>(employeeViewModel);
-
-            // Upload the image and set the ImageUrl property
-            employee.ImageUrl = DocumentSettings.UploadFile(employeeViewModel.Image, "Images");
-
-            // Add the employee to the repository
-            _unitofwork.EmployeeRepository.Add(employee);
-
-            // Save changes to the database
-            _unitofwork.Complete();
-
-            // Redirect to the index action
-            return RedirectToAction(nameof(Index));
-        }
-
-        // If model state is not valid, reload the create view with validation errors
-        ViewBag.Departments = _unitofwork.DepartmentRepository.GetAll();
-        return View(employeeViewModel);
+      
+       ViewBag.Departments = new SelectList(_unitOfWork.DepartmentRepository.GetAll(), "Id", "Name");
+        return View(new EmployeeViewModel());
     }
     catch (Exception ex)
     {
-        // Log the exception
-        ModelState.AddModelError(string.Empty, "An unexpected error occurred. Please try again or contact support.");
-
-        // Return the create view with an error message
-        ViewBag.Departments = _unitofwork.DepartmentRepository.GetAll();
-        return View(employeeViewModel);
+        _logger.LogError(ex.Message);
+        return RedirectToAction("Error", "Home");
     }
 }
 
 
         [HttpPost]
-        public IActionResult Update(int id, Employee employee)
-
+        public IActionResult Create(EmployeeViewModel employeeViewModel)
         {
-            if (id != employee.Id)
-                return NotFound();
             try
             {
-
                 if (ModelState.IsValid)
                 {
-                    _unitofwork.EmployeeRepository.Update(employee);
-                    _unitofwork.Complete();
+                    var mappedEmployee = new Employee
+                    {
+                        Name = employeeViewModel.Name,
+                        Age = employeeViewModel.Age,
+                        Address = employeeViewModel.Address,
+                        Email = employeeViewModel.Email,
+                        Salary = employeeViewModel.Salary,
+                        isActive = employeeViewModel.isActive,
+                        HireDate = employeeViewModel.HireDate,
+                        DepartmentId= employeeViewModel.DepartmentId,
+                        ImageUrl = employeeViewModel.ImageUrl
+                    };
+
+                    _unitOfWork.EmployeeRepository.Add(mappedEmployee);
+                    _unitOfWork.Complete();
+
                     return RedirectToAction(nameof(Index));
                 }
                 else
                 {
-                    return View(employee);
+               ViewBag.Departments = new SelectList(_unitOfWork.DepartmentRepository.GetAll(), "Id", "Name");
+
+                    return View(employeeViewModel);
                 }
             }
             catch (Exception ex)
             {
-
+                _logger.LogError(ex.Message);
                 return RedirectToAction("Error", "Home");
             }
         }
 
+        [HttpGet]
+        public IActionResult Details(int? id)
+        {
+            try
+            {
+                if (id == null)
+                    return BadRequest();
 
+                var employee = _unitOfWork.EmployeeRepository.GetById(id);
+
+                if (employee == null)
+                    return NotFound();
+
+                var mappedEmployee = new EmployeeViewModel
+                {
+                    Id = employee.Id,
+                    Name = employee.Name,
+                    Age = employee.Age,
+                    Address = employee.Address,
+                    Email = employee.Email,
+                    Salary = employee.Salary,
+                    isActive = employee.isActive,
+                    HireDate = employee.HireDate,
+                    ImageUrl = employee.ImageUrl,
+                    DepartmentId = employee.DepartmentId
+                };
+
+                return View(mappedEmployee);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return RedirectToAction("Error", "Home");
+            }
+        }
+
+        [HttpGet]
+        public IActionResult Update(int? id)
+        {
+            try
+            {
+                if (id == null)
+                    return BadRequest();
+
+                var employee = _unitOfWork.EmployeeRepository.GetById(id);
+
+                if (employee == null)
+                    return NotFound();
+
+                var departments = _unitOfWork.DepartmentRepository.GetAll();
+                ViewBag.Departments = new SelectList(departments, "Id", "Name");
+
+                var mappedEmployee = new EmployeeViewModel
+                {
+                    Id = employee.Id,
+                    Name = employee.Name,
+                    Age = employee.Age,
+                    Address = employee.Address,
+                    Email = employee.Email,
+                    Salary = employee.Salary,
+                    isActive = employee.isActive,
+                    HireDate = employee.HireDate,
+                    ImageUrl = employee.ImageUrl,
+                    DepartmentId = employee.DepartmentId
+                };
+
+                return View(mappedEmployee);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return RedirectToAction("Error", "Home");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Update(EmployeeViewModel employeeViewModel)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var employee = _unitOfWork.EmployeeRepository.GetById(employeeViewModel.Id);
+
+                    if (employee == null)
+                        return NotFound();
+
+                    employee.Name = employeeViewModel.Name;
+                    employee.Age = employeeViewModel.Age;
+                    employee.Address = employeeViewModel.Address;
+                    employee.Email = employeeViewModel.Email;
+                    employee.Salary = employeeViewModel.Salary;
+                    employee.isActive = employeeViewModel.isActive;
+                    employee.HireDate = employeeViewModel.HireDate;
+                    employee.DepartmentId = employeeViewModel.DepartmentId;
+                    employee.ImageUrl = employeeViewModel.ImageUrl;
+
+                    _unitOfWork.EmployeeRepository.Update(employee);
+                    _unitOfWork.Complete();
+
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    var departments = _unitOfWork.DepartmentRepository.GetAll();
+                    ViewBag.Departments = new SelectList(departments, "Id", "Name");
+                    return View(employeeViewModel);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return RedirectToAction("Error", "Home");
+            }
+        }
+
+        [HttpPost]
         public IActionResult Delete(int? id)
         {
             try
@@ -119,23 +233,21 @@ public IActionResult Create(EmployeeViewModel employeeViewModel)
                 if (id == null)
                     return BadRequest();
 
-                var employee = _unitofwork.EmployeeRepository.GetById(id);
+                var employee = _unitOfWork.EmployeeRepository.GetById(id);
 
                 if (employee == null)
                     return NotFound();
 
-                _unitofwork.EmployeeRepository.Delete(employee);
-                _unitofwork.Complete();
-
+                _unitOfWork.EmployeeRepository.Delete(employee);
+                _unitOfWork.Complete();
 
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
-
+                _logger.LogError(ex.Message);
                 return RedirectToAction("Error", "Home");
             }
         }
     }
-    //DTO==> Data Transfer Object
 }

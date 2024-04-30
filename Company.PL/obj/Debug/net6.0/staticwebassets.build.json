@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yEIqvC2iGEHpaFBvBHVie1TdumA8NJR/XHHS9gUJUZE=",
+  "Hash": "XBzL0x84xCBGXtaecbgYVDvIURA/PqEan8xgaJEYBtE=",
   "Source": "Company.PL",
   "BasePath": "_content/Company.PL",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\DotNetMeterial\\Company Dashboard\\Company.PL\\wwwroot\\css\\style.css",
+      "SourceId": "Company.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DotNetMeterial\\Company Dashboard\\Company.PL\\wwwroot\\",
+      "BasePath": "_content/Company.PL",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "D:\\DotNetMeterial\\Company Dashboard\\Company.PL\\wwwroot\\favicon.ico",

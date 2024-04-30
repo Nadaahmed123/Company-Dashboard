@@ -8,7 +8,7 @@ namespace Company.PL.Controllers
 {
     public class DepartmentController : Controller
     {
-         private readonly IUnitOfWork _unitOfWork;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger<DepartmentController> _logger;
 
         public DepartmentController(IUnitOfWork unitOfWork, ILogger<DepartmentController> logger)
@@ -20,7 +20,7 @@ namespace Company.PL.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            var departments =_unitOfWork .DepartmentRepository.GetAll();
+            var departments = _unitOfWork.DepartmentRepository.GetAll();
             return View(departments);
         }
 
@@ -50,12 +50,12 @@ namespace Company.PL.Controllers
         {
             try
             {
-                if (id is null)
+                if (id == null)
                     return BadRequest();
 
-                var department =_unitOfWork .DepartmentRepository.GetById(id);
+                var department = _unitOfWork.DepartmentRepository.GetById(id);
 
-                if (department is null)
+                if (department == null)
                     return NotFound();
 
                 return View(department);
@@ -72,12 +72,12 @@ namespace Company.PL.Controllers
         {
             try
             {
-                if (id is null)
+                if (id == null)
                     return BadRequest();
 
-                var department =_unitOfWork .DepartmentRepository.GetById(id);
+                var department = _unitOfWork.DepartmentRepository.GetById(id);
 
-                if (department is null)
+                if (department == null)
                     return NotFound();
 
                 return View(department);
@@ -92,49 +92,48 @@ namespace Company.PL.Controllers
         [HttpPost]
         public IActionResult Update(Department department)
         {
-           try
-           {
-               if (ModelState.IsValid)
-               {
-                   _unitOfWork .DepartmentRepository.Update(department);
-                   _unitOfWork.Complete();
-                   return RedirectToAction(nameof(Index));
-               }
-               else
-               {
-                   return View(department);
-               }
-           }
-           catch (Exception ex)
-           {
-               _logger.LogError(ex.Message);
-               return RedirectToAction("Error", "Home");
-           }
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _unitOfWork.DepartmentRepository.Update(department);
+                    _unitOfWork.Complete();
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    return View(department);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return RedirectToAction("Error", "Home");
+            }
         }
 
-     [HttpPost]
-public IActionResult Delete(int? id)
-{
-   try
-   {
-       if (id == null)
-           return BadRequest(); 
+        [HttpPost]
+        public IActionResult Delete(int? id)
+        {
+            try
+            {
+                if (id == null)
+                    return BadRequest();
 
-       var department =_unitOfWork .DepartmentRepository.GetById(id);
+                var department = _unitOfWork.DepartmentRepository.GetById(id);
 
-       if (department == null)
-           return NotFound();
+                if (department == null)
+                    return NotFound();
 
-       _unitOfWork .DepartmentRepository.Delete(department);
-       _unitOfWork.Complete();
-       return RedirectToAction(nameof(Index));
-   }
-   catch (Exception ex)
-   {
-       _logger.LogError(ex.Message);
-       return RedirectToAction("Error", "Home");
-   }
-}
-
+                _unitOfWork.DepartmentRepository.Delete(department);
+                _unitOfWork.Complete();
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return RedirectToAction("Error", "Home");
+            }
+        }
     }
 }

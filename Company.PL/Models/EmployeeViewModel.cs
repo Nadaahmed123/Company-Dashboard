@@ -1,31 +1,46 @@
+using Microsoft.AspNetCore.Http;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Company.PL.Models
 {
     public class EmployeeViewModel
     {
         public int Id { set; get; }
-        [Required]
+
+        [Required(ErrorMessage = "Name is required")]
         [MaxLength(50)]
         public string Name { set; get; }
+
+        [Required(ErrorMessage = "Age is required")]
         public int Age { set; get; }
+
+        [Required(ErrorMessage = "Address is required")]
         public string Address { set; get; }
-        [EmailAddress]
+
+        [Required(ErrorMessage = "Email is required")]
+        [EmailAddress(ErrorMessage = "Invalid email format")]
         public string Email { set; get; }
-        [Column(TypeName = "money")]
+
+        [Required(ErrorMessage = "Salary is required")]
+        [Range(0, double.MaxValue, ErrorMessage = "Invalid salary")]
         public double Salary { set; get; }
+
+        [Required(ErrorMessage = "Please select active status")]
         public bool isActive { set; get; }
+
+        [Display(Name = "Hire Date")]
         public DateTime HireDate { set; get; } = DateTime.Now;
-    public IFormFile Image { set; get; }
+
+        // Property to hold the uploaded image file
+        [Display(Name = "Image")]
+        public IFormFile Image { set; get; }
+
+        // Property to store the URL of the uploaded image
         public string ImageUrl { set; get; }
+
+        [Required(ErrorMessage = "Department is required")]
+        [Display(Name = "Department")]
         public int DepartmentId { set; get; }
-
-
     }
 }

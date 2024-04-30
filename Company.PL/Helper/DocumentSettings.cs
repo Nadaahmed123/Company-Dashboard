@@ -13,23 +13,31 @@ namespace Company.PL.Helper
                 throw new ArgumentException("File is null or empty.", nameof(file));
             }
 
-            // Create folder if it doesn't exist
-            string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Files", folderName);
-            Directory.CreateDirectory(folderPath);
-
-            // Generate unique file name
-            string fileName = $"{Guid.NewGuid()}-{Path.GetFileName(file.FileName)}";
-
-            // Combine folder path and file name to get full file path
-            string filePath = Path.Combine(folderPath, fileName);
-
-            // Save file to disk
-            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            try
             {
-                file.CopyTo(fileStream);
-            }
+                // Create folder if it doesn't exist
+                string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Files", folderName);
+                Directory.CreateDirectory(folderPath);
 
-            return fileName;
+                // Generate unique file name
+                string fileName = $"{Guid.NewGuid()}-{Path.GetFileName(file.FileName)}";
+
+                // Combine folder path and file name to get full file path
+                string filePath = Path.Combine(folderPath, fileName);
+
+                // Save file to disk
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    file.CopyTo(fileStream);
+                }
+
+                return fileName;
+            }
+            catch (Exception ex)
+            {
+                // Log or handle the exception appropriately
+                throw ex;
+            }
         }
 
         public static void DeleteFile(string fileName, string folderName)

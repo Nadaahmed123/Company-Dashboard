@@ -1,0 +1,33 @@
+@model SignUpViewModel
+@{
+    ViewData["Title"] = "SignUp";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+
+<div class="main-agileinfo">
+    <div class="agileits-top">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <form asp-controller="Account" asp-action="SignUp" method="post">
+            <input class="text email" type="email" asp-for="Email" placeholder="Email" required>
+            <span class="text-danger" asp-validation-for="Email"></span>
+            <input class="text" type="password" asp-for="Password" placeholder="Password" required>
+            <span class="text-danger" asp-validation-for="Password"></span>
+            <input class="text w3lpass" type="password" asp-for="ConfirmPassword" placeholder="Confirm Password" required>
+            <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+
+            <div class="wthree-text">
+                <label class="anim">
+                    <input type="checkbox" class="checkbox" asp-for="IsAgree" required>
+                    <span>I Agree To The Terms & Conditions</span>
+                </label>
+                <div class="clear"></div>
+            </div>
+            <input type="submit" value="SIGNUP">
+               <p>Already have an Account? <a asp-action="Login">Login Now!</a></p>
+        </form>
+     
+    </div>
+</div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"/>
+}
