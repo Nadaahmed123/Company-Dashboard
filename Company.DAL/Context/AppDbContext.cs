@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Company.DAL.Entities;
 namespace Company.DAL.Context
 {
-    public class AppDbContext :IdentityDbContext<ApplicationUser>
+    public class AppDbContext :IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {

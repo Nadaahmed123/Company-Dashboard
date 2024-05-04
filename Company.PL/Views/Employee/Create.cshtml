@@ -1,12 +1,16 @@
 
-@model EmployeeViewModel
+@* @model Employee *@
+@{
+    ViewData["Title"] = "Create";
+    // var Departments = new SelectList(ViewBag.Departments, "Id", "Name");
+}
 
 <div class="row">
     <div class="col-6">
         <form asp-action="Create" asp-controller="Employee" enctype="multipart/form-data">
             <partial name="PartialView/CreateOrUpdatePartialView"/>
             <div class="form-group">
-                <input type="submit" value="Add" class="btn btn-primary" />
+                <input type="submit" value="Add" class="btn btn-primary"/>
                 <a asp-action="Index" class="btn btn-light">Back to list</a>
             </div>
         </form>

@@ -1,231 +1,106 @@
+using AutoMapper;
 using Company.BLL.Interfaces;
 using Company.DAL.Entities;
 using Company.PL.Helper;
 using Company.PL.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Mvc.Rendering; 
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System;
-using System.Linq;
-using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
 
 namespace Company.PL.Controllers
 {
     public class EmployeeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly ILogger<EmployeeController> _logger;
+        private readonly IMapper _mapper;
 
-        public EmployeeController(IUnitOfWork unitOfWork, ILogger<EmployeeController> logger)
+        public EmployeeController(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
-            _logger = logger;
+            _mapper = mapper;
         }
 
-        [HttpGet]
-        public IActionResult Index(string searchValue = "")
+        public IActionResult Index(string SearchValue = "")
         {
-            try
-            {
-                var employees = string.IsNullOrEmpty(searchValue)
-                    ? _unitOfWork.EmployeeRepository.GetAll()
-                    : _unitOfWork.EmployeeRepository.Search(searchValue);
-
-                var employeeViewModels = employees.Select(e => new EmployeeViewModel
-                {
-                    Id = e.Id,
-                    Name = e.Name,
-                    Age = e.Age,
-                    Address = e.Address,
-                    Email = e.Email,
-                    Salary = e.Salary,
-                    isActive = e.isActive,
-                    HireDate = e.HireDate,
-                    ImageUrl = e.ImageUrl,
-                    DepartmentId = e.DepartmentId
-                }).ToList();
-
-                return View(employeeViewModels);
+            IEnumerable<Employee> employees;
+            IEnumerable<EmployeeViewModel> employeeViewModel;
+            if (string.IsNullOrEmpty(SearchValue)) 
+            { 
+                employees = _unitOfWork.EmployeeRepository.GetAll();
+                employeeViewModel = _mapper.Map<IEnumerable<EmployeeViewModel>>(employees);
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex.Message);
-                return RedirectToAction("Error", "Home");
+            else 
+            { 
+                employees = _unitOfWork.EmployeeRepository.Search(SearchValue);
+                employeeViewModel = _mapper.Map<IEnumerable<EmployeeViewModel>>(employees);
             }
+
+            return View(employeeViewModel);
         }
 
-       [HttpGet]
-public IActionResult Create()
+       public IActionResult Create()
 {
-    try
-    {
-      
-       ViewBag.Departments = new SelectList(_unitOfWork.DepartmentRepository.GetAll(), "Id", "Name");
-        return View(new EmployeeViewModel());
-    }
-    catch (Exception ex)
-    {
-        _logger.LogError(ex.Message);
-        return RedirectToAction("Error", "Home");
-    }
+    ViewBag.Departments = _unitOfWork.DepartmentRepository.GetAll();
+    return View(new EmployeeViewModel());
 }
 
-
-        [HttpPost]
-        public IActionResult Create(EmployeeViewModel employeeViewModel)
+[HttpPost]
+public IActionResult Create(EmployeeViewModel employeeViewModel)
+{
+    if (ModelState.IsValid)
+    {
+        if (employeeViewModel.Image != null && employeeViewModel.Image.Length > 0)
         {
+            try
+            {
+               
+
+                employeeViewModel.ImageUrl = DocumentSettings.UploadFile(employeeViewModel.Image, "Images");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("Image", "An error occurred while uploading the image: " + ex.Message);
+                return View(employeeViewModel);
+            }
+        }
+
+        var employee = _mapper.Map<Employee>(employeeViewModel);
+        _unitOfWork.EmployeeRepository.Add(employee);
+        _unitOfWork.Complete();
+
+        return RedirectToAction(nameof(Index));
+    }
+
+    ViewBag.Departments = _unitOfWork.DepartmentRepository.GetAll();
+    return View(employeeViewModel);
+}
+        [HttpPost]
+        public IActionResult Update(int id, Employee employee)
+        {
+            if (id != employee.Id)
+                return NotFound();
+            
             try
             {
                 if (ModelState.IsValid)
                 {
-                    var mappedEmployee = new Employee
-                    {
-                        Name = employeeViewModel.Name,
-                        Age = employeeViewModel.Age,
-                        Address = employeeViewModel.Address,
-                        Email = employeeViewModel.Email,
-                        Salary = employeeViewModel.Salary,
-                        isActive = employeeViewModel.isActive,
-                        HireDate = employeeViewModel.HireDate,
-                        DepartmentId= employeeViewModel.DepartmentId,
-                        ImageUrl = employeeViewModel.ImageUrl
-                    };
-
-                    _unitOfWork.EmployeeRepository.Add(mappedEmployee);
-                    _unitOfWork.Complete();
-
-                    return RedirectToAction(nameof(Index));
-                }
-                else
-                {
-               ViewBag.Departments = new SelectList(_unitOfWork.DepartmentRepository.GetAll(), "Id", "Name");
-
-                    return View(employeeViewModel);
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex.Message);
-                return RedirectToAction("Error", "Home");
-            }
-        }
-
-        [HttpGet]
-        public IActionResult Details(int? id)
-        {
-            try
-            {
-                if (id == null)
-                    return BadRequest();
-
-                var employee = _unitOfWork.EmployeeRepository.GetById(id);
-
-                if (employee == null)
-                    return NotFound();
-
-                var mappedEmployee = new EmployeeViewModel
-                {
-                    Id = employee.Id,
-                    Name = employee.Name,
-                    Age = employee.Age,
-                    Address = employee.Address,
-                    Email = employee.Email,
-                    Salary = employee.Salary,
-                    isActive = employee.isActive,
-                    HireDate = employee.HireDate,
-                    ImageUrl = employee.ImageUrl,
-                    DepartmentId = employee.DepartmentId
-                };
-
-                return View(mappedEmployee);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex.Message);
-                return RedirectToAction("Error", "Home");
-            }
-        }
-
-        [HttpGet]
-        public IActionResult Update(int? id)
-        {
-            try
-            {
-                if (id == null)
-                    return BadRequest();
-
-                var employee = _unitOfWork.EmployeeRepository.GetById(id);
-
-                if (employee == null)
-                    return NotFound();
-
-                var departments = _unitOfWork.DepartmentRepository.GetAll();
-                ViewBag.Departments = new SelectList(departments, "Id", "Name");
-
-                var mappedEmployee = new EmployeeViewModel
-                {
-                    Id = employee.Id,
-                    Name = employee.Name,
-                    Age = employee.Age,
-                    Address = employee.Address,
-                    Email = employee.Email,
-                    Salary = employee.Salary,
-                    isActive = employee.isActive,
-                    HireDate = employee.HireDate,
-                    ImageUrl = employee.ImageUrl,
-                    DepartmentId = employee.DepartmentId
-                };
-
-                return View(mappedEmployee);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex.Message);
-                return RedirectToAction("Error", "Home");
-            }
-        }
-
-        [HttpPost]
-        public IActionResult Update(EmployeeViewModel employeeViewModel)
-        {
-            try
-            {
-                if (ModelState.IsValid)
-                {
-                    var employee = _unitOfWork.EmployeeRepository.GetById(employeeViewModel.Id);
-
-                    if (employee == null)
-                        return NotFound();
-
-                    employee.Name = employeeViewModel.Name;
-                    employee.Age = employeeViewModel.Age;
-                    employee.Address = employeeViewModel.Address;
-                    employee.Email = employeeViewModel.Email;
-                    employee.Salary = employeeViewModel.Salary;
-                    employee.isActive = employeeViewModel.isActive;
-                    employee.HireDate = employeeViewModel.HireDate;
-                    employee.DepartmentId = employeeViewModel.DepartmentId;
-                    employee.ImageUrl = employeeViewModel.ImageUrl;
-
                     _unitOfWork.EmployeeRepository.Update(employee);
                     _unitOfWork.Complete();
-
                     return RedirectToAction(nameof(Index));
                 }
                 else
                 {
-                    var departments = _unitOfWork.DepartmentRepository.GetAll();
-                    ViewBag.Departments = new SelectList(departments, "Id", "Name");
-                    return View(employeeViewModel);
+                    return View(employee);
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex.Message);
                 return RedirectToAction("Error", "Home");
             }
         }
 
-        [HttpPost]
         public IActionResult Delete(int? id)
         {
             try
@@ -245,9 +120,9 @@ public IActionResult Create()
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex.Message);
                 return RedirectToAction("Error", "Home");
             }
         }
     }
+    // DTO==> Data Transfer Object
 }

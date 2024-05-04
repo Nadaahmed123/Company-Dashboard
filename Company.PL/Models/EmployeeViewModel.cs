@@ -23,7 +23,7 @@ namespace Company.PL.Models
         public string Email { set; get; }
 
         [Required(ErrorMessage = "Salary is required")]
-        [Range(0, double.MaxValue, ErrorMessage = "Invalid salary")]
+        // [Range(0, double.MaxValue, ErrorMessage = "Invalid salary")]
         public double Salary { set; get; }
 
         [Required(ErrorMessage = "Please select active status")]
@@ -32,8 +32,7 @@ namespace Company.PL.Models
         [Display(Name = "Hire Date")]
         public DateTime HireDate { set; get; } = DateTime.Now;
 
-        // Property to hold the uploaded image file
-        [Display(Name = "Image")]
+     
         public IFormFile Image { set; get; }
 
         // Property to store the URL of the uploaded image
@@ -42,5 +41,6 @@ namespace Company.PL.Models
         [Required(ErrorMessage = "Department is required")]
         [Display(Name = "Department")]
         public int DepartmentId { set; get; }
+        public DepartmentViewModel? Department { get; set; }
     }
 }

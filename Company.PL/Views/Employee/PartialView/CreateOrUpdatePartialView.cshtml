@@ -1,7 +1,6 @@
 @model EmployeeViewModel
 @{
-    var Departments = new SelectList(ViewBag.Departments, "Id", "Name", Model.DepartmentId);
-    
+    var Departments = new SelectList(ViewBag.Departments, "Id", "Name");
 }
 
 <div class="form-group">
@@ -45,7 +44,7 @@
 </div>
 <div class="form-group form-check">
     <label asp-for="@Model.DepartmentId" class="form-check-label"></label>
-   <select asp-for="@Model.DepartmentId" asp-items="Departments" class="form-control" required>
+   <select asp-for="@Model.DepartmentId" asp-items="Departments" class="form-control" >
         <option value="">-- Select Department --</option>
     </select>
     <span asp-validation-for="@Model.DepartmentId" class="text-danger"></span>
