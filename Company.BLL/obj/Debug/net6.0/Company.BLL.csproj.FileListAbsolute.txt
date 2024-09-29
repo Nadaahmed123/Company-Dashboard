@@ -29,3 +29,19 @@ D:\DotNetMeterial\Company Dashboard\Company.BLL\obj\Debug\net6.0\Company.BLL.dll
 D:\DotNetMeterial\Company Dashboard\Company.BLL\obj\Debug\net6.0\refint\Company.BLL.dll
 D:\DotNetMeterial\Company Dashboard\Company.BLL\obj\Debug\net6.0\Company.BLL.pdb
 D:\DotNetMeterial\Company Dashboard\Company.BLL\obj\Debug\net6.0\ref\Company.BLL.dll
+C:\Users\ascom\Desktop\MVC\Company.BLL\bin\Debug\net6.0\Company.BLL.deps.json
+C:\Users\ascom\Desktop\MVC\Company.BLL\bin\Debug\net6.0\Company.BLL.dll
+C:\Users\ascom\Desktop\MVC\Company.BLL\bin\Debug\net6.0\Company.BLL.pdb
+C:\Users\ascom\Desktop\MVC\Company.BLL\bin\Debug\net6.0\Company.DAL.dll
+C:\Users\ascom\Desktop\MVC\Company.BLL\bin\Debug\net6.0\Company.DAL.pdb
+C:\Users\ascom\Desktop\MVC\Company.BLL\obj\Debug\net6.0\Company.BLL.csproj.AssemblyReference.cache
+C:\Users\ascom\Desktop\MVC\Company.BLL\obj\Debug\net6.0\Company.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ascom\Desktop\MVC\Company.BLL\obj\Debug\net6.0\Company.BLL.AssemblyInfoInputs.cache
+C:\Users\ascom\Desktop\MVC\Company.BLL\obj\Debug\net6.0\Company.BLL.AssemblyInfo.cs
+C:\Users\ascom\Desktop\MVC\Company.BLL\obj\Debug\net6.0\Company.BLL.csproj.CoreCompileInputs.cache
+C:\Users\ascom\Desktop\MVC\Company.BLL\obj\Debug\net6.0\Company.BLL.sourcelink.json
+C:\Users\ascom\Desktop\MVC\Company.BLL\obj\Debug\net6.0\Company..E6BDEF00.Up2Date
+C:\Users\ascom\Desktop\MVC\Company.BLL\obj\Debug\net6.0\Company.BLL.dll
+C:\Users\ascom\Desktop\MVC\Company.BLL\obj\Debug\net6.0\refint\Company.BLL.dll
+C:\Users\ascom\Desktop\MVC\Company.BLL\obj\Debug\net6.0\Company.BLL.pdb
+C:\Users\ascom\Desktop\MVC\Company.BLL\obj\Debug\net6.0\ref\Company.BLL.dll

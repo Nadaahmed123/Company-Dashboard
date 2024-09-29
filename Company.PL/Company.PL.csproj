@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\Files\**" />
+    <Content Remove="wwwroot\Files\**" />
+    <EmbeddedResource Remove="wwwroot\Files\**" />
+    <None Remove="wwwroot\Files\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.26">
       <PrivateAssets>all</PrivateAssets>
@@ -17,8 +24,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Company.BLL\Company.BLL.csproj" />
   </ItemGroup>
-  
+
   <ItemGroup>
-    <Folder Include="wwwroot\Files\Images\" />
+    <Folder Include="wwwroot\uploads\Image\" />
   </ItemGroup>
 </Project>

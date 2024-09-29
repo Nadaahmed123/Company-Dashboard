@@ -29,8 +29,11 @@ namespace Company.BLL.Repositories
 
         public T GetById(int? id)
         => _context.Set<T>().Find(id);
-     
-       
+
+        public T GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
 
         public void Update(T entity)
         => _context.Set<T>().Update(entity);

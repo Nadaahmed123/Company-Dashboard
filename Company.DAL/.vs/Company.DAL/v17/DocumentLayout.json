@@ -1,7 +1,81 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DotNetMeterial\\Company Dashboard\\Company.DAL\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55BC862D-C07B-4F71-AFAB-7217EB2B8671}|Company.DAL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.dal\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BC862D-C07B-4F71-AFAB-7217EB2B8671}|Company.DAL.csproj|solutionrelative:entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\models\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\views\\employee\\partialview\\createorupdatepartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\models\\departmentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\helper\\documentsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55BC862D-C07B-4F71-AFAB-7217EB2B8671}|Company.DAL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.dal\\entities\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BC862D-C07B-4F71-AFAB-7217EB2B8671}|Company.DAL.csproj|solutionrelative:entities\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85789ADD-BEE0-4DBC-B345-92F070F9BD3F}|..\\Company.BLL\\Company.BLL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.bll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85789ADD-BEE0-4DBC-B345-92F070F9BD3F}|..\\Company.BLL\\Company.BLL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.bll\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55BC862D-C07B-4F71-AFAB-7217EB2B8671}|Company.DAL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.dal\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BC862D-C07B-4F71-AFAB-7217EB2B8671}|Company.DAL.csproj|solutionrelative:entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55BC862D-C07B-4F71-AFAB-7217EB2B8671}|Company.DAL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.dal\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BC862D-C07B-4F71-AFAB-7217EB2B8671}|Company.DAL.csproj|solutionrelative:context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85789ADD-BEE0-4DBC-B345-92F070F9BD3F}|..\\Company.BLL\\Company.BLL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.bll\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85789ADD-BEE0-4DBC-B345-92F070F9BD3F}|..\\Company.BLL\\Company.BLL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.bll\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85789ADD-BEE0-4DBC-B345-92F070F9BD3F}|..\\Company.BLL\\Company.BLL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.bll\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\helper\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85789ADD-BEE0-4DBC-B345-92F070F9BD3F}|..\\Company.BLL\\Company.BLL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.bll\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\mapper\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C6C92F-8986-4D03-A864-FBCF7861B86B}|..\\Company.PL\\Company.PL.csproj|c:\\users\\ascom\\desktop\\mvc\\company.pl\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +83,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 264,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 35,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,6 +204,291 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DepartmentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Models\\DepartmentViewModel.cs",
+              "RelativeDocumentMoniker": "..\\Company.PL\\Models\\DepartmentViewModel.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Models\\DepartmentViewModel.cs",
+              "RelativeToolTip": "..\\Company.PL\\Models\\DepartmentViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T19:49:03.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "..\\Company.PL\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "..\\Company.PL\\Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:47:46.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "Entities\\Employee.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\Entities\\Employee.cs",
+              "RelativeToolTip": "Entities\\Employee.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T10:17:17.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Models\\EmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "..\\Company.PL\\Models\\EmployeeViewModel.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Models\\EmployeeViewModel.cs",
+              "RelativeToolTip": "..\\Company.PL\\Models\\EmployeeViewModel.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAiwCsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T20:18:50.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Views\\Employee\\Create.cshtml",
+              "RelativeDocumentMoniker": "..\\Company.PL\\Views\\Employee\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Views\\Employee\\Create.cshtml",
+              "RelativeToolTip": "..\\Company.PL\\Views\\Employee\\Create.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAFQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T20:16:48.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\Company.PL\\Views\\Employee\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "..\\Company.PL\\Views\\Employee\\Index.cshtml",
+              "ViewState": "AQIAADQAAAAAAAAAAAAiwEYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T20:16:29.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateOrUpdatePartialView.cshtml",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Views\\Employee\\PartialView\\CreateOrUpdatePartialView.cshtml",
+              "RelativeDocumentMoniker": "..\\Company.PL\\Views\\Employee\\PartialView\\CreateOrUpdatePartialView.cshtml",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Views\\Employee\\PartialView\\CreateOrUpdatePartialView.cshtml",
+              "RelativeToolTip": "..\\Company.PL\\Views\\Employee\\PartialView\\CreateOrUpdatePartialView.cshtml",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAwDcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T20:17:28.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DocumentSettings.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Helper\\DocumentSettings.cs",
+              "RelativeDocumentMoniker": "..\\Company.PL\\Helper\\DocumentSettings.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Helper\\DocumentSettings.cs",
+              "RelativeToolTip": "..\\Company.PL\\Helper\\DocumentSettings.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAACoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T10:18:43.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.BLL\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "..\\Company.BLL\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.BLL\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "..\\Company.BLL\\Repositories\\GenericRepository.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAIBQwAsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T18:11:28.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\Company.PL\\appsettings.json",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\appsettings.json",
+              "RelativeToolTip": "..\\Company.PL\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-01T20:49:16.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "..\\Company.PL\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "..\\Company.PL\\Controllers\\DepartmentController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAIBQwDIAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T18:13:44.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationRole.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\Entities\\ApplicationRole.cs",
+              "RelativeDocumentMoniker": "Entities\\ApplicationRole.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\Entities\\ApplicationRole.cs",
+              "RelativeToolTip": "Entities\\ApplicationRole.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T12:00:08.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.BLL\\Interfaces\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "..\\Company.BLL\\Interfaces\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.BLL\\Interfaces\\IGenericRepository.cs",
+              "RelativeToolTip": "..\\Company.BLL\\Interfaces\\IGenericRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvwsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T18:11:15.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "Entities\\Department.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\Entities\\Department.cs",
+              "RelativeToolTip": "Entities\\Department.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAIBQwA4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T18:10:10.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "Context\\AppDbContext.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAswBsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:35:19.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.BLL\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "..\\Company.BLL\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.BLL\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "..\\Company.BLL\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAIBJwBUAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T18:10:26.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.BLL\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "..\\Company.BLL\\Repositories\\DepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.BLL\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "..\\Company.BLL\\Repositories\\DepartmentRepository.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:29:50.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Helper\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "..\\Company.PL\\Helper\\EmailSettings.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Helper\\EmailSettings.cs",
+              "RelativeToolTip": "..\\Company.PL\\Helper\\EmailSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T10:18:42.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.BLL\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "..\\Company.BLL\\Interfaces\\IEmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.BLL\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeToolTip": "..\\Company.BLL\\Interfaces\\IEmployeeRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAUwA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T18:11:03.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.BLL\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\Company.BLL\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.BLL\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "..\\Company.BLL\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAEBUwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T18:21:30.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EmployeeProfile.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Mapper\\EmployeeProfile.cs",
+              "RelativeDocumentMoniker": "..\\Company.PL\\Mapper\\EmployeeProfile.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Mapper\\EmployeeProfile.cs",
+              "RelativeToolTip": "..\\Company.PL\\Mapper\\EmployeeProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T10:16:50.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Company.PL\\Program.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Program.cs",
+              "RelativeToolTip": "..\\Company.PL\\Program.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAtwE0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T20:08:58.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "..\\Company.PL\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\ascom\\Desktop\\MVC\\Company.PL\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "..\\Company.PL\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAIBJwI8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T17:28:00.169Z"
             }
           ]
         },
@@ -144,10 +503,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

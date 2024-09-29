@@ -27,3 +27,18 @@ D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\refint\Company.
 D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\Company.DAL.pdb
 D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\Company.DAL.genruntimeconfig.cache
 D:\DotNetMeterial\Company Dashboard\Company.DAL\obj\Debug\net6.0\ref\Company.DAL.dll
+C:\Users\ascom\Desktop\MVC\Company.DAL\bin\Debug\net6.0\Company.DAL.deps.json
+C:\Users\ascom\Desktop\MVC\Company.DAL\bin\Debug\net6.0\Company.DAL.runtimeconfig.json
+C:\Users\ascom\Desktop\MVC\Company.DAL\bin\Debug\net6.0\Company.DAL.dll
+C:\Users\ascom\Desktop\MVC\Company.DAL\bin\Debug\net6.0\Company.DAL.pdb
+C:\Users\ascom\Desktop\MVC\Company.DAL\obj\Debug\net6.0\Company.DAL.csproj.AssemblyReference.cache
+C:\Users\ascom\Desktop\MVC\Company.DAL\obj\Debug\net6.0\Company.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ascom\Desktop\MVC\Company.DAL\obj\Debug\net6.0\Company.DAL.AssemblyInfoInputs.cache
+C:\Users\ascom\Desktop\MVC\Company.DAL\obj\Debug\net6.0\Company.DAL.AssemblyInfo.cs
+C:\Users\ascom\Desktop\MVC\Company.DAL\obj\Debug\net6.0\Company.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ascom\Desktop\MVC\Company.DAL\obj\Debug\net6.0\Company.DAL.sourcelink.json
+C:\Users\ascom\Desktop\MVC\Company.DAL\obj\Debug\net6.0\Company.DAL.dll
+C:\Users\ascom\Desktop\MVC\Company.DAL\obj\Debug\net6.0\refint\Company.DAL.dll
+C:\Users\ascom\Desktop\MVC\Company.DAL\obj\Debug\net6.0\Company.DAL.pdb
+C:\Users\ascom\Desktop\MVC\Company.DAL\obj\Debug\net6.0\Company.DAL.genruntimeconfig.cache
+C:\Users\ascom\Desktop\MVC\Company.DAL\obj\Debug\net6.0\ref\Company.DAL.dll

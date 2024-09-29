@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DotNetMeterial\\Company Dashboard\\Company.DAL\\Company.DAL.csproj": {}
+    "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\Company.DAL.csproj": {}
   },
   "projects": {
-    "D:\\DotNetMeterial\\Company Dashboard\\Company.DAL\\Company.DAL.csproj": {
+    "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\Company.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DotNetMeterial\\Company Dashboard\\Company.DAL\\Company.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\Company.DAL.csproj",
         "projectName": "Company.DAL",
-        "projectPath": "D:\\DotNetMeterial\\Company Dashboard\\Company.DAL\\Company.DAL.csproj",
-        "packagesPath": "C:\\Users\\Alresala\\.nuget\\packages\\",
-        "outputPath": "D:\\DotNetMeterial\\Company Dashboard\\Company.DAL\\obj\\",
+        "projectPath": "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\Company.DAL.csproj",
+        "packagesPath": "C:\\Users\\ascom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ascom\\Desktop\\MVC\\Company.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Alresala\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ascom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

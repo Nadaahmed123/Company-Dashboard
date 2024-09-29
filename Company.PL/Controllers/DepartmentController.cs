@@ -53,7 +53,7 @@ namespace Company.PL.Controllers
                 if (id == null)
                     return BadRequest();
 
-                var department = _unitOfWork.DepartmentRepository.GetById(id);
+                var department = _unitOfWork.DepartmentRepository.GetById(id.Value);
 
                 if (department == null)
                     return NotFound();
@@ -75,7 +75,7 @@ namespace Company.PL.Controllers
                 if (id == null)
                     return BadRequest();
 
-                var department = _unitOfWork.DepartmentRepository.GetById(id);
+                var department = _unitOfWork.DepartmentRepository.GetById(id.Value);
 
                 if (department == null)
                     return NotFound();
@@ -120,7 +120,7 @@ namespace Company.PL.Controllers
                 if (id == null)
                     return BadRequest();
 
-                var department = _unitOfWork.DepartmentRepository.GetById(id);
+                var department = _unitOfWork.DepartmentRepository.GetById(id.Value);
 
                 if (department == null)
                     return NotFound();

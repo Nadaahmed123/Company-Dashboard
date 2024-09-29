@@ -18,8 +18,8 @@ namespace Company.BLL.Repositories
         {
           _context = context;
         }
-          public Employee GetById(int id)
-         => _context.Employees.FirstOrDefault(x => x.Id == id);
+         //// public Employee GetById(int id)
+         ////=> _context.Employees.FirstOrDefault(x => x.Id == id);
          public IEnumerable<Employee> GetEmployeeByDepartmentName(string departmentName)
         {
             throw new NotImplementedException();

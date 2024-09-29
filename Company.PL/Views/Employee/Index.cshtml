@@ -42,24 +42,32 @@
             </tr>
         </thead>
         <tbody>
-            @foreach(var employee in Model)
-            {
+        <tbody>
+                @foreach (var employee in Model)
+                {
                 <tr>
                     <td>@employee.Name</td>
                     <td>
-                        <img src="~/Files/Images/@employee.ImageUrl" class="img-circle" width="40" alt="Employee Image" />
+                            @if (!string.IsNullOrEmpty(employee.ImageUrl))
+                            {
+                            <img src="@employee.ImageUrl" class="img-circle" width="40" alt="Employee Image" />
+                            }
+                            else
+                            {
+                            <img src="~/uploads/Image/default.png" class="img-circle" width="40" alt="Default Image" />
+                            }
                     </td>
                     <td>@employee.Age</td>
                     <td>@employee.Address</td>
                     <td>@employee.Salary</td>
                     <td>@employee.Email</td>
-                    <td>@employee.HireDate</td>
-                    <td>@employee.isActive</td>
+                    <td>@employee.HireDate.ToShortDateString()</td>
+                    <td>@(employee.IsActive ? "Yes" : "No")</td>
                     <td><a href="#">Details</a></td>
                     <td><a href="#">Update</a></td>
                     <td><a href="#">Delete</a></td>
                 </tr>
-            }
+                }
         </tbody>
     </table>
 }

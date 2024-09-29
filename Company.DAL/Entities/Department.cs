@@ -7,14 +7,13 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Company.DAL.Entities
 {
-    public class Department :BaseEntity
+    public class Department : BaseEntity
     {
         public int Id { get; set; }
-        [Required(ErrorMessage = "Department name is Required ")]
-        public string Name { get; set; }
-        [Required(ErrorMessage = "Department Code is Required ")]
         public string Code { get; set; }
-        public DateTime CreateAt { set; get; } = DateTime.Now;
-
+        public string Name { get; set; }
+        public DateTime CreateAt { get; set; }
+        public ICollection<Employee> Employees { get; set; } = new HashSet<Employee>();
     }
+
 }

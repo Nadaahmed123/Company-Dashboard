@@ -9,151 +9,151 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Company.PL
 build_property.RootNamespace = Company.PL
-build_property.ProjectDir = D:\DotNetMeterial\Company Dashboard\Company.PL\
+build_property.ProjectDir = C:\Users\ascom\Desktop\MVC\Company.PL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\DotNetMeterial\Company Dashboard\Company.PL
+build_property.MSBuildProjectDirectory = C:\Users\ascom\Desktop\MVC\Company.PL
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Account/CompleteForgetPassword.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Account/CompleteForgetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb21wbGV0ZUZvcmdldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Account/ForgetPassword.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Account/ForgetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Account/Login.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Account/ResetPassword.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Account/SignUp.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Account/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Department/Create.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Department/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Department/Details.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Department/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Department/Index.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Department/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Department/Update.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Department/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Employee/Create.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Employee/Index.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Employee/PartialView/CreateOrUpdatePartialView.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Employee/PartialView/CreateOrUpdatePartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcUGFydGlhbFZpZXdcQ3JlYXRlT3JVcGRhdGVQYXJ0aWFsVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Home/Index.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Home/Privacy.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Roles/AccessDenied.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Roles/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQWNjZXNzRGVuaWVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Roles/AddOrRemoveUsers.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Roles/AddOrRemoveUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQWRkT3JSZW1vdmVVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Roles/Create.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Roles/Delete.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Roles/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Roles/Details.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Roles/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Roles/Index.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Roles/PartialViews/CreateUpdatePartialView.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Roles/PartialViews/CreateUpdatePartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcUGFydGlhbFZpZXdzXENyZWF0ZVVwZGF0ZVBhcnRpYWxWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Roles/PartialViews/DetailsDeleteUserPartialView.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Roles/PartialViews/DetailsDeleteUserPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcUGFydGlhbFZpZXdzXERldGFpbHNEZWxldGVVc2VyUGFydGlhbFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Roles/Update.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Roles/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Shared/Error.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Shared/_AuthLayout.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Shared/_AuthLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Shared/_ButtonsPartialView.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Shared/_ButtonsPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CdXR0b25zUGFydGlhbFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/User/Details.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/User/Index.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/User/PartialViews/CreateUpdatePartialView.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/User/PartialViews/CreateUpdatePartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQYXJ0aWFsVmlld3NcQ3JlYXRlVXBkYXRlUGFydGlhbFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/User/PartialViews/DetailsDeleteUserPartialView.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/User/PartialViews/DetailsDeleteUserPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQYXJ0aWFsVmlld3NcRGV0YWlsc0RlbGV0ZVVzZXJQYXJ0aWFsVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/User/Update.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/User/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/_ViewImports.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/_ViewStart.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNetMeterial/Company Dashboard/Company.PL/Views/Shared/_Layout.cshtml]
+[C:/Users/ascom/Desktop/MVC/Company.PL/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-gprikmbkgb
